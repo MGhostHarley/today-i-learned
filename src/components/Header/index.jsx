@@ -2,9 +2,6 @@ import { useState } from "react";
 function Header({ showForm, setShowForm }) {
   const appTitle = "Today M Learned";
   const [isSignedIn, setIsSignedIn] = useState(false);
-  const pw = "123456";
-
-  //        onClick={() => setShowForm((show) => !show)}
 
   function authenticate() {
     if (!isSignedIn) {

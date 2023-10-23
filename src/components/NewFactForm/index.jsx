@@ -22,7 +22,6 @@ function NewFactForm({ setFacts, setShowForm }) {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    console.log(text, source, category);
 
     if (text && isValidHttpUrl(source) && category && textLength <= 200) {
       setIsUploading(true);
